@@ -29,7 +29,6 @@ namespace NeoIsisJob.Views
     public sealed partial class ClassPage : Page
     {
         private ClassesViewModel _classesViewModel;
-
         public ClassesViewModel ViewModel { get; }
 
         public ClassPage()
@@ -62,6 +61,21 @@ namespace NeoIsisJob.Views
         public void GoToRankingPage_Tap(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(RankingPage));
+        }
+    }
+    public class BoolToVisibilityConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, string language)
+        {
+            bool isVisible = (bool)value;
+            bool invert = parameter?.ToString()?.ToLower() == "inverse";
+            if (invert) isVisible = !isVisible;
+            return isVisible ? Visibility.Visible : Visibility.Collapsed;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
         }
     }
 }

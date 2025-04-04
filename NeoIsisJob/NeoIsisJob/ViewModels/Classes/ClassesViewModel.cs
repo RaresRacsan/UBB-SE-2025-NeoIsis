@@ -14,6 +14,8 @@ using System.Security.Claims;
 using NeoIsisJob.ViewModels.Workout;
 using System;
 using NeoIsisJob.Data;
+using Microsoft.UI.Xaml.Data;
+using Microsoft.UI.Xaml;
 
 
 namespace NeoIsisJob.ViewModels.Classes
@@ -29,7 +31,7 @@ namespace NeoIsisJob.ViewModels.Classes
         private ObservableCollection<PersonalTrainerModel> _personalTrainers;
         private DateTimeOffset _selectedDate = DateTimeOffset.Now;
         private ClassTypeModel _selectedClassType;
-
+        public bool HasClasses => Classes?.Count > 0;
         public SelectedClassViewModel SelectedClassViewModel { get; }
         public ICommand CloseRegisterPopupCommand { get; }
         public ICommand OpenRegisterPopupCommand { get; }
@@ -58,6 +60,7 @@ namespace NeoIsisJob.ViewModels.Classes
             {
                 _classes = value;
                 OnPropertyChanged();
+                OnPropertyChanged(nameof(HasClasses));
             }
         }
 

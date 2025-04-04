@@ -103,52 +103,52 @@
 
             <StackPanel Orientation="Horizontal">
                 <Image Source="/Assets/Ranks/Rank7.png" Width="50" Height="50"></Image>
-                <TextBlock Text="Grandmaster" Foreground="OrangeRed" Width="150" Margin="10,15,0,0"></TextBlock>
-                <TextBlock Text="8500" Foreground="OrangeRed" TextAlignment="Center" Width="50" Margin="25, 15, 0, 0"></TextBlock>
+                <TextBlock Text="Grandmaster" Foreground="OrangeRed" Width="150" Margin="10,15,0,0" FontWeight="Bold"></TextBlock>
+                <TextBlock Text="8500" Foreground="OrangeRed" TextAlignment="Center" FontWeight="Bold" Width="50" Margin="25, 15, 0, 0"></TextBlock>
                 <TextBlock Text="-" Width="10" Margin="15, 15, 0, 0"></TextBlock>
-                <TextBlock Text="9500" Foreground="OrangeRed" TextAlignment="Center" Width="50" Margin="15, 15, 0, 0"></TextBlock>
+                <TextBlock Text="9500" Foreground="OrangeRed" TextAlignment="Center" FontWeight="Bold" Width="50" Margin="15, 15, 0, 0"></TextBlock>
             </StackPanel>
                 <StackPanel Orientation="Horizontal">
                 <Image Source="/Assets/Ranks/Rank6.png" Width="50" Height="50"></Image>
-                <TextBlock Text="Master" Foreground="DarkViolet" Width="150" Margin="10,15,0,0"></TextBlock>
-                <TextBlock Text="7000" Foreground="DarkViolet" TextAlignment="Center" Width="50" Margin="25, 15, 0, 0"></TextBlock>
+                <TextBlock Text="Master" Foreground="DarkViolet" Width="150" Margin="10,15,0,0" FontWeight="Bold"></TextBlock>
+                <TextBlock Text="7000" Foreground="DarkViolet" TextAlignment="Center" FontWeight="Bold" Width="50" Margin="25, 15, 0, 0"></TextBlock>
                 <TextBlock Text="-" Width="10" Margin="15, 15, 0, 0"></TextBlock>
-                <TextBlock Text="8500" Foreground="DarkViolet" TextAlignment="Center" Width="50" Margin="15, 15, 0, 0"></TextBlock>
+                <TextBlock Text="8500" Foreground="DarkViolet" TextAlignment="Center" FontWeight="Bold" Width="50" Margin="15, 15, 0, 0"></TextBlock>
             </StackPanel>
                 <StackPanel Orientation="Horizontal">
                 <Image Source="/Assets/Ranks/Rank5.png" Width="50" Height="50"></Image>
-                <TextBlock Text="Elite" Foreground="DarkGreen" Width="150" Margin="10,15,0,0"></TextBlock>
-                <TextBlock Text="5000" Foreground="DarkGreen" TextAlignment="Center" Width="50" Margin="25, 15, 0, 0"></TextBlock>
+                <TextBlock Text="Elite" Foreground="DarkGreen" Width="150" Margin="10,15,0,0" FontWeight="Bold"></TextBlock>
+                <TextBlock Text="5000" Foreground="DarkGreen" TextAlignment="Center" FontWeight="Bold" Width="50" Margin="25, 15, 0, 0"></TextBlock>
                 <TextBlock Text="-" Width="10" Margin="15, 15, 0, 0"></TextBlock>
-                <TextBlock Text="7000" Foreground="DarkGreen" TextAlignment="Center" Width="50" Margin="15, 15, 0, 0"></TextBlock>
+                <TextBlock Text="7000" Foreground="DarkGreen" TextAlignment="Center" FontWeight="Bold" Width="50" Margin="15, 15, 0, 0"></TextBlock>
             </StackPanel>
                 <StackPanel Orientation="Horizontal">
                 <Image Source="/Assets/Ranks/Rank4.png" Width="50" Height="50"></Image>
-                <TextBlock Text="Gold" Foreground="Gold" Width="150" Margin="10,15,0,0"></TextBlock>
-                <TextBlock Text="3500" Foreground="Gold" TextAlignment="Center" Width="50" Margin="25, 15, 0, 0"></TextBlock>
+                <TextBlock Text="Gold" Foreground="Gold" Width="150" Margin="10,15,0,0" FontWeight="Bold"></TextBlock>
+                <TextBlock Text="3500" Foreground="Gold" TextAlignment="Center" FontWeight="Bold" Width="50" Margin="25, 15, 0, 0"></TextBlock>
                 <TextBlock Text="-" Width="10" Margin="15, 15, 0, 0"></TextBlock>
-                <TextBlock Text="5000" Foreground="Gold" TextAlignment="Center" Width="50" Margin="15, 15, 0, 0"></TextBlock>
+                <TextBlock Text="5000" Foreground="Gold" TextAlignment="Center" FontWeight="Bold" Width="50" Margin="15, 15, 0, 0"></TextBlock>
             </StackPanel>
                 <StackPanel Orientation="Horizontal">
                 <Image Source="/Assets/Ranks/Rank3.png" Width="50" Height="50"></Image>
-                <TextBlock Text="Silver" Foreground="Silver" Width="150" Margin="10,15,0,0"></TextBlock>
-                <TextBlock Text="2250" Foreground="Silver" TextAlignment="Center" Width="50" Margin="25, 15, 0, 0"></TextBlock>
+                <TextBlock Text="Silver" Foreground="Silver" Width="150" Margin="10,15,0,0" FontWeight="Bold"></TextBlock>
+                <TextBlock Text="2250" Foreground="Silver" TextAlignment="Center" FontWeight="Bold" Width="50" Margin="25, 15, 0, 0"></TextBlock>
                 <TextBlock Text="-" Width="10" Margin="15, 15, 0, 0"></TextBlock>
-                <TextBlock Text="3500" Foreground="Silver" TextAlignment="Center" Width="50" Margin="15, 15, 0, 0"></TextBlock>
+                <TextBlock Text="3500" Foreground="Silver" TextAlignment="Center" FontWeight="Bold" Width="50" Margin="15, 15, 0, 0"></TextBlock>
             </StackPanel>
                 <StackPanel Orientation="Horizontal">
                 <Image Source="/Assets/Ranks/Rank2.png" Width="50" Height="50"></Image>
-                <TextBlock Text="Bronze" Foreground="SandyBrown" Width="150" Margin="10,15,0,0"></TextBlock>
-                <TextBlock Text="1000" Foreground="SandyBrown" TextAlignment="Center" Width="50" Margin="25, 15, 0, 0"></TextBlock>
+                <TextBlock Text="Bronze" Foreground="SandyBrown" Width="150" Margin="10,15,0,0" FontWeight="Bold"></TextBlock>
+                <TextBlock Text="1000" Foreground="SandyBrown" TextAlignment="Center" Width="50" FontWeight="Bold" Margin="25, 15, 0, 0"></TextBlock>
                 <TextBlock Text="-" Width="10" Margin="15, 15, 0, 0"></TextBlock>
-                <TextBlock Text="2250" Foreground="SandyBrown" TextAlignment="Center" Width="50" Margin="15, 15, 0, 0"></TextBlock>
+                <TextBlock Text="2250" Foreground="SandyBrown" TextAlignment="Center" Width="50" FontWeight="Bold" Margin="15, 15, 0, 0"></TextBlock>
             </StackPanel>
                 <StackPanel Orientation="Horizontal">
                 <Image Source="/Assets/Ranks/Rank1.png" Width="50" Height="50"></Image>
-                <TextBlock Text="Beginner" Foreground="DimGray" Width="150" Margin="10,15,0,0"></TextBlock>
-                <TextBlock Text="0" Foreground="DimGray" TextAlignment="Center" Width="50" Margin="25, 15, 0, 0"></TextBlock>
+                <TextBlock Text="Beginner" Foreground="DimGray" Width="150" Margin="10,15,0,0" FontWeight="Bold"></TextBlock>
+                <TextBlock Text="0" Foreground="DimGray" TextAlignment="Center" Width="50" FontWeight="Bold" Margin="25, 15, 0, 0"></TextBlock>
                 <TextBlock Text="-" Width="10" Margin="15, 15, 0, 0"></TextBlock>
-                <TextBlock Text="1000" Foreground="DimGray" TextAlignment="Center" Width="50" Margin="15, 15, 0, 0"></TextBlock>
+                <TextBlock Text="1000" Foreground="DimGray" TextAlignment="Center" Width="50" FontWeight="Bold" Margin="15, 15, 0, 0"></TextBlock>
             </StackPanel>
         </StackPanel>
     </Grid>

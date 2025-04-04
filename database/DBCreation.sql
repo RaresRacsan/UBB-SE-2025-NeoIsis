@@ -130,7 +130,3 @@ VALUES ('Zelu', 'Popa', '2024-02-10'),('Rares', 'Racsan', '2024-03-11'), ('Mihai
 
 INSERT INTO Classes([Name], [Description], CTID, PTID)
 VALUES ('Samba', 'danceeee', 1, 1), ('Box', 'Guts', 2, 2), ('MMA', 'fightttt', 2, 2), ('Yoga', 'relax', 3, 3)
-
-INSERT INTO Users DEFAULT VALUES;
-
-select * from UserClasses

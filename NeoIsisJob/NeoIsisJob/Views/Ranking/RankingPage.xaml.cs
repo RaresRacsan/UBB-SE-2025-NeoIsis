@@ -15,6 +15,8 @@ using Microsoft.UI.Xaml.Navigation;
 using Microsoft.UI.Xaml.Media.Imaging;
 using Microsoft.UI;
 using NeoIsisJob.ViewModels.Rankings;
+using Microsoft.UI.Xaml.Documents;
+using Microsoft.UI.Text;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -201,7 +203,7 @@ namespace NeoIsisJob.Views
             {
                 rankingPanel.Children.Clear();
 
-                rankingPanel.Children.Add(new TextBlock { Text = "All Rankings Explained:", FontSize = 25/*, FontWeight = "Bold", Margin = */  });
+                rankingPanel.Children.Add(new TextBlock { Text = "All Rankings Explained:", FontSize = 25, FontWeight = FontWeights.Bold  });
 
                 rankingPanel.Children.Add(CreateRankItem("/Assets/Ranks/Rank8.png", "Challenger", "9500", "10000", Colors.Aquamarine));
                 rankingPanel.Children.Add(CreateRankItem("/Assets/Ranks/Rank7.png", "Grandmaster", "8500", "9500", Colors.OrangeRed));
@@ -220,10 +222,17 @@ namespace NeoIsisJob.Views
             StackPanel rowStackPanel = new StackPanel { Orientation = Orientation.Horizontal };
 
             Image rankImage = new Image { Source = new BitmapImage(new Uri(this.BaseUri, imagePath)), Width = 150, Height = 150 };
-            TextBlock muscleGroupName = new TextBlock { Text = muscleGroup, FontSize = 25, Foreground = color, Margin = new Thickness(20, 60, 0, 10)};
+            TextBlock muscleGroupName = new TextBlock { Text = muscleGroup, FontSize = 25, Foreground = color, Margin = new Thickness(20, 60, 0, 10), FontWeight = FontWeights.Bold };
             ProgressBar progressBar = new ProgressBar { Value = rank, Minimum = this._rankingsViewModel.GetRankLowerBound(rank), Maximum = this._rankingsViewModel.GetRankUpperBound(rank), Foreground = color};
-            TextBlock nextRankBlock = new TextBlock { Text = "You require " + (this._rankingsViewModel.GetRankUpperBound(rank) - rank).ToString() + " points to reach the next ranking!"};
-
+            TextBlock nextRankBlock = null;
+            if (this._rankingsViewModel.GetRankUpperBound(rank) == 10000)
+            {
+                nextRankBlock = new TextBlock { Text = "You require " + (this._rankingsViewModel.GetRankUpperBound(rank) - rank).ToString() + " points to reach the end of this ranking!" };
+            }
+            else
+            {
+                nextRankBlock = new TextBlock { Text = "You require " + (this._rankingsViewModel.GetRankUpperBound(rank) - rank).ToString() + " points to reach the next ranking!" };
+            }
             rowStackPanel.Children.Add(rankImage);
             rowStackPanel.Children.Add(muscleGroupName);
             
@@ -239,10 +248,10 @@ namespace NeoIsisJob.Views
             StackPanel stackPanel = new StackPanel { Orientation = Orientation.Horizontal };
 
             Image rankImage = new Image { Source = new BitmapImage(new Uri(this.BaseUri, imagePath)), Width = 50, Height = 50 };
-            TextBlock rankText = new TextBlock { Text = rankName, Foreground = new SolidColorBrush(color), Width = 150, Margin = new Thickness(10, 15, 0, 0) };
-            TextBlock minText = new TextBlock { Text = minScore, Foreground = new SolidColorBrush(color), TextAlignment = TextAlignment.Center, Width = 50, Margin = new Thickness(25, 15, 0, 0) };
+            TextBlock rankText = new TextBlock { Text = rankName, Foreground = new SolidColorBrush(color), Width = 150, Margin = new Thickness(10, 15, 0, 0), FontWeight = FontWeights.Bold };
+            TextBlock minText = new TextBlock { Text = minScore, Foreground = new SolidColorBrush(color), TextAlignment = TextAlignment.Center, Width = 50, Margin = new Thickness(25, 15, 0, 0), FontWeight= FontWeights.Bold};
             TextBlock dashText = new TextBlock { Text = "-", Width = 10, Margin = new Thickness(15, 15, 0, 0) };
-            TextBlock maxText = new TextBlock { Text = maxScore, Foreground = new SolidColorBrush(color), TextAlignment = TextAlignment.Center, Width = 50, Margin = new Thickness(15, 15, 0, 0) };
+            TextBlock maxText = new TextBlock { Text = maxScore, Foreground = new SolidColorBrush(color), TextAlignment = TextAlignment.Center, Width = 50, Margin = new Thickness(15, 15, 0, 0), FontWeight = FontWeights.Bold };
 
             stackPanel.Children.Add(rankImage);
             stackPanel.Children.Add(rankText);
